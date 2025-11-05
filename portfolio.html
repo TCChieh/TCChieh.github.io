@@ -76,6 +76,11 @@
     </div>
   </section>
 
+  <!--  Back to Top Button -->
+<button id="backToTop" class="btn btn-primary rounded-circle">
+   ↑
+</button>
+
   <footer>
     <p>© 2025 Tzu-Chi Chieh | Built with GitHub Pages</p>
   </footer>
@@ -91,6 +96,22 @@
         navbar.classList.remove("scrolled");
       }
     });
+    const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"  // 平滑滾動
+    });
+  });
   </script>
 </body>
 </html>

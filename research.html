@@ -105,7 +105,7 @@
     <ul class="list-group list-group-flush" id="conference">
       <br><b class="year">2026</b>
       <li class="list-group-item">
-        <strong>2026 AAG Annual Meeting</strong> — Toward a Disaster Digital Twin: A Case Study of a Landslide-Dam Event in Taiwan. (March 17-21, 2026)
+        (Planning)<strong>2026 AAG Annual Meeting</strong> — Toward a Disaster Digital Twin: A Case Study of a Landslide-Dam Event in Taiwan. (March 17-21, 2026)
         <p class="text-muted"><b><em>Chieh, Tzu-Chi</em></b>, Chuang, Ray Y. </p>
       </li>
 
@@ -157,6 +157,10 @@ Data to Explore Jobs-Housing Balance of Yilan Commuting to Taipei. (November 14-
       </li>
     </ul>
   </section>
+  <!--  Back to Top Button -->
+<button id="backToTop" class="btn btn-primary rounded-circle">
+   ↑
+</button>
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-dark text-white">
@@ -165,6 +169,15 @@ Data to Explore Jobs-Housing Balance of Yilan Commuting to Taipei. (November 14-
 
   <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
   <Script>
+    window.addEventListener("scroll", function() {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 80) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+
     document.addEventListener("DOMContentLoaded", function() {
   const maxLength = 300; // 超過300字就截斷
   const abstracts = document.querySelectorAll(".abstract");
@@ -201,6 +214,22 @@ Data to Explore Jobs-Housing Balance of Yilan Commuting to Taipei. (November 14-
         }
     });
     });
+    const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"  // 平滑滾動
+    });
+  });
   </Script>
 </body>
 </html>
