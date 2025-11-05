@@ -153,13 +153,88 @@ footer {
   display: inline-block;
   text-align: left;
 }
-/* .motto-section {
-  background-color: #f8f9fa;
+
+/* education and experience */
+#education img {
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.motto-section .lead {
-  font-size: 1.25rem;
-  line-height: 1.8;
-} */
+
+#education h5 {
+  color: #82b23e; /* Bootstrap 主藍 */
+}
+
+#awards .list-group-item {
+  border: none;
+  border-left: 4px solid #ffc107;
+  background: #fff;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+/* 整個 logo 欄位靠上對齊 */
+.edu-logo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 對齊上方 */
+}
+
+/* 單一 logo 樣式 */
+.edu-logo {
+  width: 50px;          /* 統一大小 */
+  height: 50px;
+  object-fit: contain;  /* 確保不變形 */
+  margin-bottom: 6px;   /* 與下方 logo 間距 */
+}
+
+.dual-logo-horizontal {
+  display: flex;
+  align-items: flex-start;   /* 與上方文字齊平 */
+  justify-content: center;   /* logo 居中（可改成 start） */
+  gap: 10px;                 /* logo 之間距離 */
+  flex-wrap: wrap;           /* 小螢幕會自動換行 */
+}
+
+/* ==== Timeline Style ==== */
+.timeline {
+  position: relative;
+  margin-left: 30px;
+  padding-left: 20px;
+  border-left: 3px solid #dee2e6;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -12px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  padding-left: 10px;
+}
+
+/* RWD 調整 */
+@media (max-width: 767px) {
+  .timeline {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .timeline-dot {
+    display: none;
+  }
+}
+
 
 
 
