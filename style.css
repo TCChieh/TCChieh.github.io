@@ -62,7 +62,7 @@ footer {
 /* ------------------- Cover ----------------------------- */
 #cover {
   position: relative;
-  height: 100vh; /* 滿版高度 */
+  height: 100vh; 
   background: url("./img/S__22847503.jpg") center 20% / cover no-repeat;
   color: white;
   overflow: hidden;
@@ -249,14 +249,14 @@ footer {
 }
 
 .award-card {
-  border-left: 6px solid #ffc107; /* 黃色強調條 */
+  border-left: 6px solid #ffc107; 
   transition: all 0.3s ease;
 }
 
 .award-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  border-left-color: #ffca2c; /* hover 顏色微亮 */
+  border-left-color: #ffca2c; 
 }
 
 .award-card h5 {
@@ -298,18 +298,12 @@ footer {
   position: relative;
   z-index: 2;
 }
-
-
 #research{
     margin-top: 0px !important;
 }
-
-/* 讓段落更有間距 */
 #research p {
   line-height: 1.7;
 }
-
-/* 標題字距微調 */
 #research h2 {
   letter-spacing: 0.5px;
 }
@@ -339,12 +333,11 @@ footer {
 #research h5 a:hover{
     color: rgb(99, 100, 103);
 }
-/* 統一 Publication 圖片區塊高度 */
 .publication-img {
   width: 100%;
-  height: 220px;         /* 你可以改成 200~300px 看需求 */
-  object-fit: cover;     /* 保持比例但裁切超出部分 */
-  border-radius: 10px;   /* 保留圓角 */
+  height: 200px;         
+  object-fit: cover;     
+  border-radius: 10px;   
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
@@ -353,22 +346,21 @@ footer {
 }
 
 #conference .year {
-  display: flex;               /* 讓文字與線條對齊 */
+  display: flex;               
   align-items: center;
   font-size: 1.3rem;
   font-weight: 600;
   color: #333;
-  /* margin: 2rem 0 0.5rem; */
 }
 
 #conference .year::before {
   content: "";
   display: inline-block;
-  width: 4px;                  /* 直線寬度 */
-  height: 18px;                /* 直線高度，可依字體調整 */
-  background-color: #a5d6a7;   /* 線條顏色，可換為你的主色 */
-  margin-right: 10px;          /* 線與文字間距 */
-  border-radius: 2px;          /* 線條圓角 */
+  width: 4px;                 
+  height: 18px;                
+  background-color: #a5d6a7;   
+  margin-right: 10px;          
+  border-radius: 2px;         
 }
 @media (max-width: 768px) {
   .publication-img {
@@ -376,13 +368,12 @@ footer {
   }
   .row .col-md-4 img {
     object-fit: cover;
-    height: 220px; /* 可依需要調整圖片高度 */
+    height: 220px; 
     width: 100%;
   }
 }
 
-/* ----------------------------- contact ----------------- */
-/* === Contact Section === */
+/* ----------------------------- contact ----------------------- */
 #contact {
   background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
 }
@@ -405,7 +396,7 @@ footer {
   height: 120px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-top: 4px solid #5b81bb; /* 主色條 */
+  border-top: 4px solid #5b81bb; 
 }
 
 .contact-card i {
@@ -419,8 +410,6 @@ footer {
   font-weight: 600;
   font-size: 1rem;
 }
-
-/* Hover 效果 */
 .contact-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
@@ -429,8 +418,6 @@ footer {
 .contact-card:hover i {
   transform: scale(1.15);
 }
-
-/* RWD：縮小卡片尺寸 */
 @media (max-width: 767px) {
   .contact-card {
     width: 120px;
