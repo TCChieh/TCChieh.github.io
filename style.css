@@ -282,7 +282,7 @@ footer {
 .research-banner {
   position: relative;
   height: 100vh; 
-  background: url("./img/S__22847500.jpg") center 20% / cover no-repeat;
+  background: url("./img/S__22847500.jpg") center 60% / cover no-repeat;
   color: white;
   overflow: hidden;
 }
@@ -371,6 +371,13 @@ footer {
     height: 220px; 
     width: 100%;
   }
+  .research-banner {
+  position: relative;
+  height: 100vh; 
+  background: url("./img/S__22847500.jpg") 12% 30% / cover no-repeat;
+  color: white;
+  overflow: hidden;
+}
 }
 
 /* ----------------------------- contact ----------------------- */
