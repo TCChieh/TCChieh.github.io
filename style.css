@@ -111,14 +111,18 @@ footer {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* 原本的 banner，改成最小高度避免小螢幕擠爆 */
 .banner {
-  height: 15vh;                     /* 高度 15% 視窗 */
-  display: flex;                    /* 啟用 Flex */
-  align-items: center;              /* 垂直置中 */
-  justify-content: center;          /* 水平置中 */
-  text-align: center;               /* 讓文字在區塊中置中 */
+  min-height: 15vh;               
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* padding-block: 20px;             */
+  margin-top: 80px;
 }
 
+/* 你的 H1 螢光底線維持 */
 .banner h1 {
   position: relative;
   display: inline-block;
@@ -126,13 +130,34 @@ footer {
   background: linear-gradient(transparent 60%, #a5d6a7 60%);
 }
 
+/* 標籤列 */
+.interests {
+  line-height: 1.6;
+}
+
+.interests-label {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+/* 標籤（chips）微調：讓它更精緻、可換行 */
+.interests-chips .badge {
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(31, 186, 114, 0.25); /* 與 success 綠相近的邊框 */
+}
+
+
+
+
 /* about */
 #about .container {
-  max-width: 1000px; /* 預設 bootstrap container 寬 720px，可放大一些 */
+  max-width: 1000px; /* default 720px */
 }
 
 .about-img {
-  max-width: 80%;          /* 讓圖片不超出太多 */
+  max-width: 80%;          
   max-height: auto;
   object-fit: cover;
   border-radius: 15px;
@@ -161,7 +186,7 @@ footer {
 }
 
 #education h5 {
-  color: #82b23e; /* Bootstrap 主藍 */
+  color: #82b23e; 
 }
 
 #awards .list-group-item {
@@ -196,44 +221,70 @@ footer {
   flex-wrap: wrap;           /* 小螢幕會自動換行 */
 }
 
-/* ==== Timeline Style ==== */
+/* ------------ Timeline Style -------------- */
+/* === 時間軸線 === */
 .timeline {
   position: relative;
   margin-left: 30px;
   padding-left: 20px;
-  border-left: 3px solid #dee2e6;
 }
 
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 25px;               /* 控制線的水平位置 */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #dee2e6;
+  z-index: 0;               /* 線在底層 */
+}
+
+/* === 每個項目 === */
 .timeline-item {
   position: relative;
   margin-bottom: 2rem;
+  padding-left: 40px;       /* 給線和圓點留空間 */
+  padding-top: 10px;
 }
 
+/* === 圓點設定 === */
 .timeline-dot {
   position: absolute;
-  left: -12px;
-  top: 5px;
+  margin-top: 10px;
+  left: 5px;               /* 與線的 left 完全一致 */
+  top: 6px;                 /* 微調垂直位置，依實際字距調整 */
   width: 14px;
   height: 14px;
+  margin-left: -5px;        /* 讓圓點中心在線上 */
   border-radius: 50%;
+  z-index: 2;               /* 圓點在上層 */
+  box-shadow: 0 0 6px rgba(0,0,0,0.4);
 }
 
+/* === 內容區塊 === */
 .timeline-content {
-  padding-left: 10px;
+  position: relative;
+  z-index: 1;
 }
 
-/* RWD 調整 */
+/* === 手機版簡化 === */
 @media (max-width: 767px) {
-  .timeline {
-    border-left: none;
-    margin-left: 0;
-    padding-left: 0;
+  .timeline::before {
+    left: 10px;
   }
-
+  .timeline-item {
+    padding-left: 30px;
+  }
   .timeline-dot {
-    display: none;
+    left: 5px;
+    margin-left: -20px;
   }
 }
+
+
+
+/* ------------- page-view --------- */
 .page-view{
     text-align: center;
 }
@@ -241,14 +292,13 @@ footer {
 
 
 
-/* research page */
-/* 讓圖文比例維持 1:2 */
-@media (min-width: 768px) {
-  .row .col-md-4 img {
-    object-fit: cover;
-    height: 220px; /* 可依需要調整圖片高度 */
-    width: 100%;
-  }
+/* --------------- research page ----------------- */
+.research-banner{
+    background-color: rgba(233, 217, 187, 0.851);
+    padding: 15vh 0;
+}
+#research{
+    margin-top: 0px !important;
 }
 
 /* 讓段落更有間距 */
@@ -316,6 +366,16 @@ footer {
   background-color: #a5d6a7;   /* 線條顏色，可換為你的主色 */
   margin-right: 10px;          /* 線與文字間距 */
   border-radius: 2px;          /* 線條圓角 */
+}
+@media (max-width: 768px) {
+  .publication-img {
+    margin-bottom: 1rem;
+  }
+  .row .col-md-4 img {
+    object-fit: cover;
+    height: 220px; /* 可依需要調整圖片高度 */
+    width: 100%;
+  }
 }
 
 
