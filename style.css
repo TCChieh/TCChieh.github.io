@@ -1,3 +1,4 @@
+/* global */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
@@ -25,7 +26,7 @@ section {
   max-width: 960px;
   margin: 40px auto;
   padding: 0 20px;
-  scroll-margin-top: 80px; /* 讓 anchor 點擊後不被 navbar 擋到 */
+  scroll-margin-top: 80px; 
 }
 
 footer {
@@ -35,11 +36,11 @@ footer {
   color: #666;
 }
 
-/* Back to Top 按鈕 */
+/*--------------------------- Back to Top ----------------------- */
 #backToTop {
   position: fixed;
-  bottom: 30px;        /* 與底部距離 */
-  right: 30px;         /* 與右邊距離 */
+  bottom: 30px;        
+  right: 30px;         
   width: 45px;
   height: 45px;
   border: none;
@@ -49,32 +50,24 @@ footer {
   font-size: 1.2rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   cursor: pointer;
-  display: none;       /* 預設隱藏 */
+  display: none;       
   z-index: 999;
   transition: opacity 0.3s, transform 0.3s;
 }
-
-
-/* 滑過時變化 */
 #backToTop:hover {
   background-color: #76a5e3d0;
   transform: translateY(-3px);
 }
 
-
-/* 滿版背景區塊 */
-/* ===== Cover Section ===== */
+/* ------------------- Cover ----------------------------- */
 #cover {
   position: relative;
   height: 100vh; /* 滿版高度 */
   background: url("./img/S__22847503.jpg") center 20% / cover no-repeat;
-  /* ↑ 這裡的 "center 65%" 控制圖片焦點在畫面偏下，
-       你可以改成 70% 或 75% 依照照片構圖調整 */
   color: white;
   overflow: hidden;
 }
 
-/* 半透明遮罩，讓文字更清晰 */
 #cover::before {
   content: "";
   position: absolute;
@@ -82,55 +75,41 @@ footer {
   background: rgba(0, 0, 0, 0.45);
   z-index: 1;
 }
-
-/* 置中文字容器 */
 #cover .container {
   position: relative;
   z-index: 2;
 }
-
-/* 響應式文字大小 */
 #cover h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
 }
-
 #cover p {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   margin-top: 0.5rem;
 }
 
-/* navbar */
-/* 預設透明背景 */
+/*------------------- navbar ----------------------------*/
 .navbar {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
-/* 滾動後變半透明黑色背景 */
 .navbar.scrolled {
   background-color: rgba(0, 0, 0, 0.8) !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
-
-/* 原本的 banner，改成最小高度避免小螢幕擠爆 */
 .banner {
   min-height: 15vh;               
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* padding-block: 20px;             */
-  margin-top: 80px;
+  padding-block: 20px;            
+  margin-top: 30px;
 }
-
-/* 你的 H1 螢光底線維持 */
 .banner h1 {
   position: relative;
   display: inline-block;
   padding: 0 10px;
   background: linear-gradient(transparent 60%, #a5d6a7 60%);
 }
-
-/* 標籤列 */
 .interests {
   line-height: 1.6;
 }
@@ -139,19 +118,15 @@ footer {
   font-weight: 600;
   margin-right: 8px;
 }
-
-/* 標籤（chips）微調：讓它更精緻、可換行 */
 .interests-chips .badge {
   font-weight: 600;
   margin-top: 1rem;
   padding: 0.5rem 0.75rem;
-  border: 1px solid rgba(31, 186, 114, 0.25); /* 與 success 綠相近的邊框 */
+  border: 1px solid rgba(31, 186, 114, 0.25); 
 }
 
 
-
-
-/* about */
+/*-------------------- about -------------------*/
 #about .container {
   max-width: 1000px; /* default 720px */
 }
@@ -179,50 +154,35 @@ footer {
   text-align: left;
 }
 
-/* education and experience */
+/*--------------- education and experience ----------------*/
 #education img {
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
 #education h5 {
   color: #82b23e; 
 }
-
-#awards .list-group-item {
-  border: none;
-  border-left: 4px solid #ffc107;
-  background: #fff;
-  margin-bottom: 10px;
-  padding-left: 15px;
-}
-
-/* 整個 logo 欄位靠上對齊 */
 .edu-logo-col {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* 對齊上方 */
+  justify-content: flex-start; 
 }
-
-/* 單一 logo 樣式 */
 .edu-logo {
-  width: 50px;          /* 統一大小 */
+  width: 50px;          
   height: 50px;
-  object-fit: contain;  /* 確保不變形 */
-  margin-bottom: 6px;   /* 與下方 logo 間距 */
+  object-fit: contain;  
+  margin-bottom: 6px;   
 }
-
 .dual-logo-horizontal {
   display: flex;
-  align-items: flex-start;   /* 與上方文字齊平 */
-  justify-content: center;   /* logo 居中（可改成 start） */
-  gap: 10px;                 /* logo 之間距離 */
-  flex-wrap: wrap;           /* 小螢幕會自動換行 */
+  align-items: flex-start;   
+  justify-content: center;   
+  gap: 10px;                 
+  flex-wrap: wrap;           
 }
 
 /* ------------ Timeline Style -------------- */
-/* === 時間軸線 === */
 .timeline {
   position: relative;
   margin-left: 30px;
@@ -232,43 +192,42 @@ footer {
 .timeline::before {
   content: "";
   position: absolute;
-  left: 25px;               /* 控制線的水平位置 */
+  left: 25px;               
   top: 0;
   bottom: 0;
   width: 2px;
   background-color: #dee2e6;
-  z-index: 0;               /* 線在底層 */
+  z-index: 0;               
 }
-
-/* === 每個項目 === */
 .timeline-item {
   position: relative;
   margin-bottom: 2rem;
-  padding-left: 40px;       /* 給線和圓點留空間 */
+  padding-left: 40px;       
   padding-top: 10px;
 }
-
-/* === 圓點設定 === */
 .timeline-dot {
   position: absolute;
   margin-top: 10px;
-  left: 5px;               /* 與線的 left 完全一致 */
-  top: 6px;                 /* 微調垂直位置，依實際字距調整 */
+  left: 5px;               
+  top: 6px;                 
   width: 14px;
   height: 14px;
-  margin-left: -5px;        /* 讓圓點中心在線上 */
+  margin-left: -5px;        
   border-radius: 50%;
-  z-index: 2;               /* 圓點在上層 */
+  z-index: 2;               
   box-shadow: 0 0 6px rgba(0,0,0,0.4);
+  background-color: #dee2e6;
 }
-
-/* === 內容區塊 === */
 .timeline-content {
   position: relative;
   z-index: 1;
 }
+.timeline-item a{
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(62, 139, 216);
+}
 
-/* === 手機版簡化 === */
 @media (max-width: 767px) {
   .timeline::before {
     left: 10px;
@@ -280,8 +239,35 @@ footer {
     left: 5px;
     margin-left: -20px;
   }
+  .timeline{
+    margin-left: 0;
+  }
+}
+/* ------------------- awards ------------------- */
+#awards {
+  background-color: #f8f9fa;
 }
 
+.award-card {
+  border-left: 6px solid #ffc107; /* 黃色強調條 */
+  transition: all 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  border-left-color: #ffca2c; /* hover 顏色微亮 */
+}
+
+.award-card h5 {
+  color: #212529;
+}
+
+.award-card p,
+.award-card li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
 
 
 /* ------------- page-view --------- */
@@ -293,10 +279,27 @@ footer {
 
 
 /* --------------- research page ----------------- */
-.research-banner{
-    background-color: rgba(233, 217, 187, 0.851);
-    padding: 15vh 0;
+.research-banner {
+  position: relative;
+  height: 100vh; 
+  background: url("./img/S__22847500.jpg") center 20% / cover no-repeat;
+  color: white;
+  overflow: hidden;
 }
+
+.research-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(61, 61, 61, 0.541);
+  z-index: 1;
+}
+.research-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+
 #research{
     margin-top: 0px !important;
 }
@@ -378,6 +381,66 @@ footer {
   }
 }
 
+/* ----------------------------- contact ----------------- */
+/* === Contact Section === */
+#contact {
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+#contact h2 {
+  color: #212529;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #212529;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px 30px;
+  width: 140px;
+  height: 120px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-top: 4px solid #5b81bb; /* 主色條 */
+}
+
+.contact-card i {
+  font-size: 2rem;
+  color: #5b81bb;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Hover 效果 */
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card:hover i {
+  transform: scale(1.15);
+}
+
+/* RWD：縮小卡片尺寸 */
+@media (max-width: 767px) {
+  .contact-card {
+    width: 120px;
+    height: 100px;
+    padding: 15px 20px;
+  }
+  .contact-card i {
+    font-size: 1.6rem;
+  }
+}
 
 
 
