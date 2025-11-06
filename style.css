@@ -234,7 +234,9 @@ footer {
     display: none;
   }
 }
-
+.page-view{
+    text-align: center;
+}
 
 
 
