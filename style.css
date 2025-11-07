@@ -437,6 +437,25 @@ footer {
 }
 
 /* ---------------- Portfolio -------------------- */
+.portfolio-banner {
+  position: relative;
+  height: 100vh; 
+  background: url("./img/photoGallery/S__4063234.jpg") center 60% / cover no-repeat;
+  color: white;
+  overflow: hidden;
+}
+
+.portfolio-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(61, 61, 61, 0.541);
+  z-index: 1;
+}
+.portfolio-banner .container {
+  position: relative;
+  z-index: 2;
+}
 /* === Portfolio Section === */
 #portfolio {
   background-color: #ffffff;
@@ -445,7 +464,6 @@ footer {
 #portfolio h2 {
   letter-spacing: 0.5px;
 }
-
 /* === Web Project Cards === */
 .portfolio-card {
   transition: all 0.3s ease;
@@ -472,18 +490,17 @@ footer {
 .portfolio-content {
   text-align: center;
 }
-
 /* === Photo Gallery === */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 12px;                     /* 圖與圖的間距 */
+  gap: 12px;                   
 }
 
 .gallery-grid img {
   width: 100%;
   height: 100%;
-  object-fit: cover;             /* 填滿格子不變形 */
+  object-fit: cover;             
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -494,28 +511,11 @@ footer {
   box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
-/* 手機版：縮小間距 */
 @media (max-width: 767px) {
   .gallery-grid {
     gap: 8px;
   }
-}
-.portfolio-banner {
-  position: relative;
-  height: 100vh; 
-  background: url("./img/photoGallery/S__4063234.jpg") center 60% / cover no-repeat;
-  color: white;
-  overflow: hidden;
-}
-
-.portfolio-banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(61, 61, 61, 0.541);
-  z-index: 1;
-}
-.portfolio-banner .container {
-  position: relative;
-  z-index: 2;
+  .portfolio-banner {
+    background: url("./img/S__22847500.jpg") 5% 30% / cover no-repeat;
+  }
 }
