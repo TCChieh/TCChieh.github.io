@@ -436,6 +436,71 @@ footer {
   }
 }
 
+/* ---------------- Portfolio -------------------- */
+/* === Portfolio Section === */
+#portfolio {
+  background-color: #ffffff;
+}
+
+#portfolio h2 {
+  letter-spacing: 0.5px;
+}
+
+/* === Web Project Cards === */
+.portfolio-card {
+  transition: all 0.3s ease;
+  border: none;
+  background-color: #fff;
+}
+
+.portfolio-card img {
+  object-fit: cover;
+  height: 180px;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-content {
+  text-align: center;
+}
+
+/* === Photo Gallery === */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;                     /* 圖與圖的間距 */
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             /* 填滿格子不變形 */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* 手機版：縮小間距 */
+@media (max-width: 767px) {
+  .gallery-grid {
+    gap: 8px;
+  }
+}
+
 
 
 
