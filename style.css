@@ -500,8 +500,22 @@ footer {
     gap: 8px;
   }
 }
+.portfolio-banner {
+  position: relative;
+  height: 100vh; 
+  background: url("./img/photoGallery/S__4063234.jpg") center 60% / cover no-repeat;
+  color: white;
+  overflow: hidden;
+}
 
-
-
-
-
+.portfolio-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(61, 61, 61, 0.541);
+  z-index: 1;
+}
+.portfolio-banner .container {
+  position: relative;
+  z-index: 2;
+}
