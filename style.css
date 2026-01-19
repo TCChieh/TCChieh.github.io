@@ -410,7 +410,8 @@ footer {
   border-top: 4px solid #5b81bb; 
 }
 
-.contact-card i {
+.contact-card i,
+.contact-card img {
   font-size: 2rem;
   color: #5b81bb;
   margin-bottom: 10px;
@@ -429,6 +430,21 @@ footer {
 .contact-card:hover i {
   transform: scale(1.15);
 }
+
+/* 自訂 icon（Google Scholar） */
+.contact-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* hover 行為與 bi icon 一致 */
+.contact-card:hover .contact-icon {
+  transform: scale(1.15);
+}
+
 @media (max-width: 767px) {
   .contact-card {
     width: 120px;
@@ -439,6 +455,7 @@ footer {
     font-size: 1.6rem;
   }
 }
+
 
 /* ---------------- Portfolio -------------------- */
 .portfolio-banner {
