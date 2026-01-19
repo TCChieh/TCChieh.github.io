@@ -388,6 +388,10 @@ footer {
 #contact h2 {
   color: #212529;
 }
+/* 控制整個 contact 卡片區塊的寬度與對齊 */
+.contact-rows {
+  max-width: 520px;   /* 關鍵：兩排都用同一寬度 */
+}
 
 .contact-card {
   display: flex;
