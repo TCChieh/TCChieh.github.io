@@ -1,234 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Tzu-Chi Chieh</title>
-  <!-- bootstrap 5 -->
-  <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css" />
-  <!-- custom  -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFXK9VV43R"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HFXK9VV43R');
-  </script>
-  <!-- Microsogt clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "u1r5kfv2n9");
-  </script>
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="./index.html">Tzu-Chi Chieh</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link " href="./index.html#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-          <li class="nav-item"><a class="nav-link active" href="./portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="./index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- banner -->
-  <div class="cover-container d-flex align-items-center justify-content-center text-center portfolio-banner">
-    <div class="container text-center">
-        <h1 class="fw-bold mb-3">Portfolio</h1>
-    </div>
+---
+title: Portfolio
+description: WebGIS platforms, dashboards, and digital twin projects built by Tzu-Chi Chieh, plus a photography gallery.
+---
+<!-- Banner -->
+<div class="cover-container d-flex align-items-center justify-content-center text-center portfolio-banner">
+  <div class="container text-center">
+    <h1 class="fw-bold mb-3">Portfolio</h1>
   </div>
+</div>
 
-  <!-- Portfolio -->
+<!-- Web projects -->
 <section id="portfolio" class="py-5">
   <div class="container">
-    <h2 class="fw-bold mb-5 text-center">Portfolio</h2>
+    <h2 class="fw-semibold mb-4 text-primary text-center">Web Projects</h2>
 
-    <!-- ===== Web Projects ===== -->
-    <div class="mb-5">
-    <h3 class="fw-semibold mb-4 text-primary text-center">Web Projects</h3>
-        <!-- Project 6 -->
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-5 col-lg-4">
-            <div class="portfolio-card shadow-sm rounded-4 overflow-hidden">
-                <img src="./img/IMG_9966.JPG" class="img-fluid" alt="Landslide-Dam Digital Twin">
-                <div class="portfolio-content p-3">
-                <h5 class="fw-bold mb-1">Landslide-Dam Digital Twin</h5>
-                <p class="text-muted mb-2 small">
-                    3D simulation of disaster response and evacuation using web technologies.
-                </p>
-                <a href="#" target="_blank" class="btn btn-outline-primary btn-sm disabled">
-                    Coming Soon
-                </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="col-md-5 col-lg-4">
-          <div class="portfolio-card shadow-sm rounded-4 overflow-hidden">
-            <img src="./img/atlas_info.png" class="img-fluid" alt="ETC Dashboard">
-            <div class="portfolio-content p-3">
-              <h5 class="fw-bold mb-1">Geomorphological platform information</h5>
-              <span class="text-muted small web-year">2022</span>
-              <p class="text-muted mb-2 small">
-                Lots of icons are in the geomorphological platform, so this website aims to help users understand the meanings.
-              </p>
-              <a href="https://sites.google.com/view/atlas-manual/" target="_blank" class="btn btn-outline-primary btn-sm">
-                Visit Site
-              </a>
+    <div class="row g-4 justify-content-center">
+      {% for p in site.data.projects %}
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-card shadow-sm rounded-4 overflow-hidden h-100">
+          <img src="{{ p.image | relative_url }}" class="img-fluid" alt="{{ p.alt }}" loading="lazy">
+          <div class="portfolio-content p-3">
+            <h5 class="fw-bold mb-1">{{ p.title }}</h5>
+            <span class="text-muted small web-year">{{ p.year }}</span>
+            <p class="text-muted mb-2 small">{{ p.description }}</p>
+            <div class="project-links">
+              {% if p.links and p.links.size > 0 %}
+                {% for link in p.links %}
+                <a href="{{ link.url }}" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">{{ link.label }}</a>
+                {% endfor %}
+              {% else %}
+                <span class="btn btn-outline-secondary btn-sm disabled" aria-disabled="true">Coming soon</span>
+              {% endif %}
             </div>
           </div>
         </div>
-
-        <!-- Project 4 -->
-        <div class="col-md-5 col-lg-4">
-          <div class="portfolio-card shadow-sm rounded-4 overflow-hidden">
-            <img src="./img/atlas_project.png" class="img-fluid" alt="ETC Dashboard">
-            <div class="portfolio-content p-3">
-              <h5 class="fw-bold mb-1">Geomorphological platform project</h5>
-              <span class="text-muted small web-year">2022</span>
-              <p class="text-muted mb-2 small">
-                The website introduces the Geomorphology platform projects.
-              </p>
-              <a href="https://atlas.geo.ntnu.edu.tw/" target="_blank" class="btn btn-outline-primary btn-sm">
-                Visit Site
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="col-md-5 col-lg-4">
-          <div class="portfolio-card shadow-sm rounded-4 overflow-hidden">
-            <img src="./img/atlas_platform.png" class="img-fluid" alt="ETC Dashboard">
-            <div class="portfolio-content p-3">
-              <h5 class="fw-bold mb-1">Geomorphological platform</h5>
-              <span class="text-muted small web-year">2022</span>
-              <p class="text-muted mb-2 small">
-                The Geomorphology platform provides interactive maps and tools for exploring Taiwan’s landforms and terrain data.
-              </p>
-              <a href="https://atlas.geo.ntnu.edu.tw/platform/?mapname=Antun" target="_blank" class="btn btn-outline-primary btn-sm">
-                Visit Site
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="col-md-5 col-lg-4">
-          <div class="portfolio-card shadow-sm rounded-4 overflow-hidden">
-            <img src="./img/etcmap.png" class="img-fluid" alt="ETC Dashboard">
-            <div class="portfolio-content p-3">
-              <h5 class="fw-bold mb-1">ETC Highway Dashboard</h5>
-              <span class="text-muted small web-year">2021</span>
-              <p class="text-muted mb-2 small">
-                The website displays the historical hourly traffic flow on highways in Taiwan from 2017 to 2021.
-              </p>
-              <a href="http://webgis.geo.ntnu.edu.tw/ETC/" target="_blank" class="btn btn-outline-primary btn-sm">
-                Visit Site
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 1 -->
-        <div class="col-md-5 col-lg-4">
-          <div class="portfolio-card shadow-sm rounded-4 overflow-hidden">
-            <img src="./img/IGCTweb.png" class="img-fluid" alt="ETC Dashboard">
-            <div class="portfolio-content p-3">
-              <h5 class="fw-bold mb-1">IGCT-GSCT Joint Conference 2020</h5>
-              <span class="text-muted small web-year">2020</span>
-              <p class="text-muted mb-2 small">                
-                The website is the first one I built. It was for the 24th International Geographical Conference of Taiwan.
-              </p>
-              <a href="https://www1.geo.ntnu.edu.tw/IGCT/" target="_blank" class="btn btn-outline-primary btn-sm">
-                Visit Site
-              </a>
-            </div>
-          </div>
-        </div>   
-
       </div>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<!-- ===== Photography Gallery ===== -->
+<!-- Photography (loaded from photos.json by assets/js/main.js; hidden if empty) -->
 <section id="gallery" class="py-5 bg-light">
   <div class="container">
-    <h3 class="fw-semibold mb-4 text-primary text-center">Photography</h3>
-    
-    <div class="gallery-grid">
-        <!-- Load by json -->
-    </div>
+    <h2 class="fw-semibold mb-4 text-primary text-center">Photography</h2>
+    <div class="gallery-grid" data-source="{{ '/photos.json' | relative_url }}"></div>
   </div>
 </section>
-
-
-  <!--  Back to Top Button -->
-<button id="backToTop" class="btn btn-primary rounded-circle">
-   ↑
-</button>
-
-  <footer>
-    <p>© 2025 Tzu-Chi Chieh</p>
-  </footer>
-
-  <!-- JS -->
-  <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" ></script>
-  <script>
-fetch('./photos.json')
-  .then(res => res.json())
-  .then(data => {
-    const gallery = document.querySelector('.gallery-grid');
-    data.photos.forEach(src => {
-      const img = document.createElement('img');
-      img.src = src;
-      img.alt = 'Photo';
-      gallery.appendChild(img);
-    });
-  })
-  .catch(err => console.error('Failed to load gallery:', err));
-
-    window.addEventListener("scroll", function() {
-      const navbar = document.querySelector(".navbar");
-      if (window.scrollY > 80) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    });
-    const backToTop = document.getElementById("backToTop");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-      backToTop.style.display = "block";
-    } else {
-      backToTop.style.display = "none";
-    }
-  });
-
-  backToTop.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"  // 平滑滾動
-    });
-  });
-  </script>
-</body>
-</html>

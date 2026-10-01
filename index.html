@@ -1,114 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tzu-Chi Chieh</title>
-  <!-- bootstrap 5 -->
-  <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <!-- custom  -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFXK9VV43R"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HFXK9VV43R');
-  </script>
-  <!-- Microsogt clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "u1r5kfv2n9");
-  </script>
-  <!-- search -->
-  <meta property="og:title" content="Tzu-Chi Chieh | GIS & Digital Twin Research">
-  <meta property="og:description" content="Personal academic website of Tzu-Chi Chieh. GIS, Human Mobility, and Environmental Data Science.">
-  <meta property="og:url" content="https://tcchieh.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://tcchieh.github.io/img/tcc_home.png">
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Tzu-Chi Chieh</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-          <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="./index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Cover Section -->
-  <div class="cover-container d-flex align-items-center justify-content-center text-center" id="cover">
-    <div class="container text-white">
-      <h1 class="display-3 fw-bold">Tzu-Chi Chieh</h1>
-      <p class="lead">GIS • Human Mobility • Environmental Science</p>
-    </div>
+---
+---
+<!-- Cover -->
+<div class="cover-container d-flex align-items-center justify-content-center text-center" id="cover">
+  <div class="container text-white">
+    <h1 class="display-3 fw-bold">Tzu-Chi Chieh</h1>
+    <p class="lead">GIS • Disaster Digital Twins • Human Mobility • Environmental Science</p>
   </div>
-  
-  <!-- about -->
-  <section id="about" class="py-5">
+</div>
+
+<!-- About -->
+<section id="about" class="py-5">
   <div class="container">
     <div class="row align-items-center">
-      <!-- intro -->
       <div class="col-md-7">
         <h2 class="fw-bold mb-3">About Me</h2>
         <p>
-          My name is Tzu-Chi Chieh. I'm working at Academia Sinica and National Taiwan University focusing on GIS, human mobility, and
-          environmental big data. I'm curious about building digital twins and spatial analytics
-          tools for climate resilience.
+          I'm a Ph.D. student in the Taiwan International Graduate Program for Earth System Science,
+          a joint program of Academia Sinica and National Taiwan University. My doctoral research
+          builds digital twins of disaster events, starting with modeling human evacuation during
+          a landslide-dam flood in eastern Taiwan.
         </p>
         <p>
-          My research integrates geospatial analysis, environmental modeling, and big data
-          applications to address urban issues. I also enjoy designing intuitive
-          data visualizations and interactive WebGIS dashboards. I’d be happy to connect and discuss potential collaborations or research openings.
+          Before that, I worked on human mobility and environmental big data: using highway ETC records
+          to measure excess commuting and jobs-housing balance in Taiwan's metropolitan areas, and analyzing
+          multi-year PM2.5 and PM1 data from community sensor networks. I also build WebGIS platforms and
+          interactive dashboards that make spatial data easier to explore.
         </p>
-        <!-- <p>
-          I am currently seeking Ph.D. opportunities for <span style="font-weight: 700;">Fall 2026</span>,
-        focusing on <em>Geographic Information Science, Human Mobility, and Environmental Data Science</em>.
-        
-      </p> -->
-
+        <p>I'm happy to connect about collaborations and research opportunities.</p>
         <blockquote class="motto fst-italic">
-          “Fake it until you make it.”<br>
           “I don’t get lucky, I make my own luck.” <span class="fw-bold">– SUIT</span>
         </blockquote>
       </div>
-
-      <!-- personal photo -->
       <div class="col-md-5 mb-4 mb-md-0 text-center">
-        <img src="./img/quokka.jpg" alt="Tzu-Chi Chieh" class="about-img img-fluid rounded shadow-lg" />
+        <!-- Replace with a headshot when you have one, e.g. ./img/headshot.jpg with alt="Tzu-Chi Chieh" -->
+        <img src="{{ '/img/quokka.jpg' | relative_url }}" alt="A smiling quokka" class="about-img img-fluid rounded shadow-lg">
       </div>
     </div>
   </div>
 </section>
 
-<!-- education -->
+<!-- Education -->
 <section id="education" class="py-5 bg-light">
   <div class="container">
     <h2 class="fw-bold mb-4 text-center">Education</h2>
 
-    <!-- PhD -->
     <div class="row mb-4">
       <div class="col-md-2 col-3 text-center edu-logo-col">
         <div class="dual-logo-horizontal">
-          <img src="./img/Academia_Sinica_Emblem.svg.png" alt="Academia Sinica" class="edu-logo">
-          <img src="./img/National_Taiwan_University_logo.svg.png" alt="National Taiwan University" class="edu-logo">
+          <img src="{{ '/img/Academia_Sinica_Emblem.svg.png' | relative_url }}" alt="Academia Sinica" class="edu-logo" loading="lazy">
+          <img src="{{ '/img/National_Taiwan_University_logo.svg.png' | relative_url }}" alt="National Taiwan University" class="edu-logo" loading="lazy">
         </div>
       </div>
       <div class="col-md-10 col-9">
@@ -121,116 +61,94 @@
       </div>
     </div>
 
-    <!-- Master -->
     <div class="row mb-4">
       <div class="col-md-2 col-3 text-center edu-logo-col">
-        <img src="./img/National_Taiwan_Normal_University_logo.svg.png" alt="NTNU Logo" class="edu-logo">
+        <img src="{{ '/img/National_Taiwan_Normal_University_logo.svg.png' | relative_url }}" alt="National Taiwan Normal University" class="edu-logo" loading="lazy">
       </div>
       <div class="col-md-10 col-9">
         <h5 class="fw-bold mb-1">Master in Geography</h5>
         <p class="mb-1">National Taiwan Normal University, Taiwan</p>
         <p class="text-muted mb-2">September 2020 – June 2022</p>
-        <p><strong>Advisor:</strong> Dr. Bing Sheng Wu</p>
-        <p>
-          <strong>Thesis:</strong> <em>Using ETC Traffic Data to Explore Jobs-Housing Imbalance of Urban Commuting Areas in Taiwan</em>
-        </p>
+        <p class="mb-1"><strong>Advisor:</strong> Dr. Bing Sheng Wu</p>
+        <p class="mb-0"><strong>Thesis:</strong> <em>Using ETC Traffic Data to Explore Jobs-Housing Imbalance of Urban Commuting Areas in Taiwan</em></p>
       </div>
     </div>
 
-    <!-- Bachelor -->
-    <div class="row mb-4">
+    <div class="row">
       <div class="col-md-2 col-3 text-center edu-logo-col">
-        <img src="./img/National_Taiwan_Normal_University_logo.svg.png" alt="NTNU Logo" class="edu-logo">
+        <img src="{{ '/img/National_Taiwan_Normal_University_logo.svg.png' | relative_url }}" alt="National Taiwan Normal University" class="edu-logo" loading="lazy">
       </div>
       <div class="col-md-10 col-9">
         <h5 class="fw-bold mb-1">Bachelor in Geography</h5>
         <p class="mb-1">National Taiwan Normal University, Taiwan</p>
         <p class="text-muted mb-2">September 2016 – June 2020</p>
-        <p>
-          <strong>Program:</strong> Geospatial Information System Program
-        </p>
-      </div>
-    </div>
-
-    <!-- Certificate -->
-    <div class="row">
-      <div class="col-md-2 col-3 text-center edu-logo-col">
-        <img src="./img/National_Taiwan_Normal_University_logo.svg.png" alt="NTNU Logo" class="edu-logo">
-      </div>
-      <div class="col-md-10 col-9">
-        <h5 class="fw-bold mb-1">Certificate of Geospatial Information Science</h5>
-        <p class="mb-1">National Taiwan Normal University, Taiwan</p>
-        <p class="text-muted mb-0">September 2016 – June 2020</p>
+        <p class="mb-1"><strong>Program:</strong> Geospatial Information System Program</p>
+        <p class="mb-0"><strong>Certificate:</strong> Certificate of Geospatial Information Science</p>
       </div>
     </div>
   </div>
 </section>
 
-
-
-<!-- experience -->
+<!-- Experience -->
 <section id="experience" class="py-5">
   <div class="container">
     <h2 class="fw-bold mb-4 text-center">Experience</h2>
-
     <div class="timeline">
 
-      <!-- Academia Sinica -->
       <div class="timeline-item">
         <div class="timeline-dot bg-success"></div>
         <div class="timeline-content">
           <h5 class="fw-bold mb-1">Research Assistant</h5>
-          <p class="mb-1"><a href="https://rcec.sinica.edu.tw/index_en.php?">Research Center for Environmental Changes, Academia Sinica</a></p>
+          <p class="mb-1"><a href="https://rcec.sinica.edu.tw/index_en.php" target="_blank" rel="noopener">Research Center for Environmental Changes, Academia Sinica</a></p>
           <p class="text-muted mb-2">April 2023 – Present</p>
-          <p><strong>Supervisor:</strong> Dr. Shih-Chun Candice Lung</p>
-          <p class="mb-2">I collaborated with Professor Lung, and we published 2 papers in the past two years. I'm working on 2 papers which involve installing low-cost-sensors (AS-LUNG-O), field work, and the air quality of communities.</p>
-        </div>
-      </div>
-
-      <!-- NTNU -->
-      <div class="timeline-item">
-        <div class="timeline-dot bg-success"></div>
-        <div class="timeline-content">
-          <h5 class="fw-bold mb-1">Research Assistant</h5>
-          <p class="mb-1"><a href="https://www.geo.ntnu.edu.tw/">Department of Geography, National Taiwan Normal University</a></p>
-          <p class="text-muted mb-2">July 2022 – October 2022</p>
-          <ul>
-            <li>Develop and maintain the <a href="https://atlas.geo.ntnu.edu.tw/platform/?mapname=Antun">website for geomorphological map in Taiwan</a>. Also, create the <a href="https://atlas.geo.ntnu.edu.tw/">introduction website</a> for the geomorphological map.</li>
-            <li>Analyzed big data (ETC, cellular-based vehicle probe (CVP))</li>
+          <p class="mb-2"><strong>Supervisor:</strong> Dr. Shih-Chun Candice Lung</p>
+          <ul class="mb-0">
+            <li>Install and maintain research-grade low-cost sensors (AS-LUNG-O) and conduct fieldwork for community air-quality studies.</li>
+            <li>Analyze long-term PM2.5 and PM1 data; co-authored two journal articles published in 2025, with two more manuscripts in progress.</li>
           </ul>
         </div>
       </div>
 
-      <!-- Netivism -->
+      <div class="timeline-item">
+        <div class="timeline-dot bg-success"></div>
+        <div class="timeline-content">
+          <h5 class="fw-bold mb-1">Research Assistant</h5>
+          <p class="mb-1"><a href="https://www.geo.ntnu.edu.tw/" target="_blank" rel="noopener">Department of Geography, National Taiwan Normal University</a></p>
+          <p class="text-muted mb-2">July 2022 – October 2022</p>
+          <ul class="mb-0">
+            <li>Developed and maintained the <a href="https://atlas.geo.ntnu.edu.tw/platform/?mapname=Antun" target="_blank" rel="noopener">Taiwan geomorphological map platform</a> and built its <a href="https://atlas.geo.ntnu.edu.tw/" target="_blank" rel="noopener">project website</a>.</li>
+            <li>Analyzed traffic big data from ETC and cellular-based vehicle probe (CVP) sources.</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="timeline-item">
         <div class="timeline-dot bg-success"></div>
         <div class="timeline-content">
           <h5 class="fw-bold mb-1">Website Engineer Intern</h5>
-          <p class="mb-1"><a href="https://netivism.com.tw/">Netivism</a></p>
+          <p class="mb-1"><a href="https://netivism.com.tw/" target="_blank" rel="noopener">Netivism</a></p>
           <p class="text-muted mb-2">September 2020 – January 2022</p>
-          <p class="mb-2">Create and develop websites for NGOs using Drupal, HTML, CSS, JavaScript, and PHP. I had developed and assisted about 10 cases.</p>
+          <p class="mb-0">Built and maintained websites for about 10 NGO clients using Drupal, PHP, HTML, CSS, and JavaScript.</p>
         </div>
       </div>
 
-      <!-- Supergeo -->
       <div class="timeline-item">
         <div class="timeline-dot bg-success"></div>
         <div class="timeline-content">
           <h5 class="fw-bold mb-1">GIS Engineer Intern</h5>
-          <p class="mb-1"><a href="https://www.supergeotek.com/">Supergeo</a></p>
+          <p class="mb-1"><a href="https://www.supergeotek.com/" target="_blank" rel="noopener">Supergeo</a></p>
           <p class="text-muted mb-2">September 2019 – February 2020</p>
-          <p class="mb-2">Tested new versions of Supergeo’s GIS software and recorded. Addressed thousands of data with Python. </p>
+          <p class="mb-0">Tested new releases of Supergeo’s GIS software and documented the results; processed thousands of data records with Python.</p>
         </div>
       </div>
 
-      <!-- GeoForce -->
       <div class="timeline-item">
         <div class="timeline-dot bg-success"></div>
         <div class="timeline-content">
           <h5 class="fw-bold mb-1">GIS Engineer Intern</h5>
-          <p class="mb-1"><a href="https://www.geoforce.com.tw/index.php?website_language_id=3">GeoForce</a></p>
+          <p class="mb-1"><a href="https://www.geoforce.com.tw/index.php?website_language_id=3" target="_blank" rel="noopener">GeoForce</a></p>
           <p class="text-muted mb-2">August 2018 – September 2018</p>
-          <p class="mb-2">Processed and analyzed 3D point cloud data collected from UAV images.</p>
+          <p class="mb-0">Processed and analyzed 3D point cloud data collected from UAV images.</p>
         </div>
       </div>
 
@@ -238,38 +156,29 @@
   </div>
 </section>
 
-
-
 <!-- Awards -->
 <section id="awards" class="py-5 bg-light">
   <div class="container">
-    <h2 class="fw-bold mb-5 text-center">Awards & Honors</h2>
-
+    <h2 class="fw-bold mb-5 text-center">Awards &amp; Honors</h2>
     <div class="row justify-content-center g-4">
-
-      <!-- Award 1 -->
       <div class="col-md-6 col-lg-5">
         <div class="award-card p-4 shadow-sm bg-white rounded-4 h-100">
           <div class="d-flex align-items-center mb-3">
-            <i class="bi bi-trophy-fill text-primary fs-3 me-3"></i>
+            <i class="bi bi-trophy-fill text-primary fs-3 me-3" aria-hidden="true"></i>
             <div>
               <h5 class="fw-bold mb-1">Excellent Graduate Student Scholarship</h5>
               <p class="text-muted mb-0">National Taiwan Normal University</p>
             </div>
           </div>
-          <p class="mb-0 text-secondary">
-            Recognized for outstanding academic performance and research achievement. (2021) & (2022)
-          </p>
+          <p class="mb-0 text-secondary">Recognized for outstanding academic performance and research achievement (2021, 2022).</p>
         </div>
       </div>
-
-      <!-- Award 2 -->
       <div class="col-md-6 col-lg-5">
         <div class="award-card p-4 shadow-sm bg-white rounded-4 h-100">
           <div class="d-flex align-items-center mb-3">
-            <i class="bi bi-award-fill text-primary fs-3 me-3"></i>
+            <i class="bi bi-award-fill text-primary fs-3 me-3" aria-hidden="true"></i>
             <div>
-              <h5 class="fw-bold mb-1">Five Virtue Awards & Scholarships</h5>
+              <h5 class="fw-bold mb-1">Five Virtue Awards &amp; Scholarships</h5>
               <p class="text-muted mb-0">National Taiwan Normal University</p>
             </div>
           </div>
@@ -281,115 +190,44 @@
           </ul>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="py-5 bg-light">
+<!-- Contact (white background so it doesn't merge with Awards) -->
+<section id="contact" class="py-5">
   <div class="container text-center">
     <h2 class="fw-bold mb-4">Contact</h2>
-    <p class="mb-5 text-secondary">
-      Feel free to reach out for collaboration, research discussions, or professional connections.
-    </p>
+    <p class="mb-5 text-secondary">Feel free to reach out for collaboration, research discussions, or professional connections.</p>
 
-    <!-- contact rows wrapper -->
     <div class="contact-rows mx-auto">
-
-      <!-- Row 1 -->
       <div class="d-flex flex-wrap justify-content-start gap-3 mb-4">
-        <a href="mailto:amonchieh@gmail.com" class="contact-card">
-          <i class="bi bi-envelope-fill"></i>
-          <span>Email</span>
+        <a href="mailto:{{ site.author.email }}" class="contact-card">
+          <i class="bi bi-envelope-fill" aria-hidden="true"></i><span>Email</span>
         </a>
-
-        <a href="https://github.com/tcchieh" target="_blank" class="contact-card">
-          <i class="bi bi-github"></i>
-          <span>GitHub</span>
+        <a href="https://github.com/tcchieh" target="_blank" rel="noopener" class="contact-card">
+          <i class="bi bi-github" aria-hidden="true"></i><span>GitHub</span>
         </a>
-
-        <a href="https://www.linkedin.com/in/tzu-chi-chieh" target="_blank" class="contact-card">
-          <i class="bi bi-linkedin"></i>
-          <span>LinkedIn</span>
+        <a href="https://www.linkedin.com/in/tzu-chi-chieh" target="_blank" rel="noopener" class="contact-card">
+          <i class="bi bi-linkedin" aria-hidden="true"></i><span>LinkedIn</span>
         </a>
+        {% if site.cv_url != "" %}
+        <a href="{{ site.cv_url | relative_url }}" target="_blank" rel="noopener" class="contact-card">
+          <i class="bi bi-file-earmark-person-fill" aria-hidden="true"></i><span>CV</span>
+        </a>
+        {% endif %}
       </div>
-
-      <!-- Row 2 -->
-       
       <div class="d-flex flex-wrap justify-content-start gap-3">
-        <!-- Google Scholar -->
-        <a href="https://scholar.google.com/citations?user=fUNU6EsAAAAJ&hl" 
-          target="_blank" 
-          class="contact-card">
-          <i >
-            <img src="./img/icons8-google-scholar-50.png"
-              alt="Google Scholar"
-              class="contact-icon">
-          </i>
-          <span>GoogleScholar</span>
+        <a href="https://scholar.google.com/citations?user=fUNU6EsAAAAJ" target="_blank" rel="noopener" class="contact-card">
+          <i class="ai ai-google-scholar" aria-hidden="true"></i><span>Google Scholar</span>
         </a>
-
-        
-        <a href="https://www.researchgate.net/profile/Tzu-Chi-Chieh" target="_blank" class="contact-card">
-          <i class="bi bi-journal-richtext"></i>
-          <span>ResearchGate</span>
+        <a href="https://www.researchgate.net/profile/Tzu-Chi-Chieh" target="_blank" rel="noopener" class="contact-card">
+          <i class="ai ai-researchgate" aria-hidden="true"></i><span>ResearchGate</span>
         </a>
-
-        <a href="https://orcid.org/0009-0006-5826-3729" target="_blank" class="contact-card">
-          <i class="bi bi-file-earmark-pdf"></i>
-          <span>ORCID</span>
+        <a href="https://orcid.org/0009-0006-5826-3729" target="_blank" rel="noopener" class="contact-card">
+          <i class="ai ai-orcid" aria-hidden="true"></i><span>ORCID</span>
         </a>
       </div>
-
     </div>
   </div>
 </section>
-
-
-
-  <!--  Back to Top Button -->
-<button id="backToTop" class="btn btn-primary rounded-circle">
-   ↑
-</button>
-
-  <footer>
-    <p>© 2025 Tzu-Chi Chieh</p>
-  </footer>
-<section >
-  <div class="container page-view">
-      <img src='https://mapmyvisitors.com/map.png?cl=63625e&w=300&t=tt&d=ufV9crzp_7E6_kDu-a3MmtZmUGEFBE1wUuCg8aDzULE&co=ffffff&ct=36729e'/>
-  </div>
-</section>
-
-  <!-- JS -->
-  <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" ></script>
-  <script>
-    window.addEventListener("scroll", function() {
-      const navbar = document.querySelector(".navbar");
-      if (window.scrollY > 80) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    });
-    const backToTop = document.getElementById("backToTop");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-      backToTop.style.display = "block";
-    } else {
-      backToTop.style.display = "none";
-    }
-  });
-
-  backToTop.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"  // 平滑滾動
-    });
-  });
-  </script>
-  
-  <!-- <a href="https://mapmyvisitors.com/web/1c0id"  title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=ufV9crzp_7E6_kDu-a3MmtZmUGEFBE1wUuCg8aDzULE&cl=ffffff" /></a> -->
-</html>

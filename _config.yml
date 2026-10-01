@@ -1,0 +1,45 @@
+# ---------- Site ----------
+title: Tzu-Chi Chieh
+tagline: GIS & Disaster Digital Twin Research
+description: >-
+  Personal academic website of Tzu-Chi Chieh, Ph.D. student at Academia Sinica
+  and National Taiwan University working on GIS, disaster digital twins,
+  human mobility, and environmental data science.
+url: https://tcchieh.github.io
+baseurl: ""
+lang: en
+
+author:
+  name: Tzu-Chi Chieh
+  email: amonchieh@gmail.com
+
+# Used by jekyll-seo-tag to link your profiles (schema.org sameAs)
+social:
+  name: Tzu-Chi Chieh
+  links:
+    - https://github.com/tcchieh
+    - https://www.linkedin.com/in/tzu-chi-chieh
+    - https://orcid.org/0009-0006-5826-3729
+    - https://scholar.google.com/citations?user=fUNU6EsAAAAJ
+    - https://www.researchgate.net/profile/Tzu-Chi-Chieh
+
+# Google Analytics (only loaded on the live site)
+google_analytics_id: G-HFXK9VV43R
+
+# Put your CV PDF in the repo (e.g. files/CV_Tzu-Chi_Chieh.pdf) and fill this in.
+# The CV links in the navbar and Contact section appear automatically once set.
+cv_url: ""
+
+# ---------- Build ----------
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /img/tcc_home.png
+
+exclude:
+  - README.md

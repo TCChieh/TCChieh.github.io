@@ -1,0 +1,114 @@
+# Newest first. Your name is highlighted automatically wherever "Chieh, Tzu-Chi" appears in authors.
+- title: "PM1 Source Evaluation with 3.5 Years of Monitoring in Central Taiwan Using Research-grade Low-cost Sensors"
+  url: https://doi.org/10.1007/s44408-025-00058-2
+  image: /img/PM1_graphAbstract-5.jpg
+  authors: "Shih-Chun Candice Lung, Chieh, Tzu-Chi, Li-Te Chang, Chun-Hu Liu, Ming-Chien Mark Tsou, Tzu-Yao Julia Wen"
+  year: 2025
+  venue: "Aerosol and Air Quality Research, 25(11), 1–16"
+  keywords: "PM1 exposure, Community PM assessment, PM1 sensing device, Exposure increments"
+  abstract: >-
+    More exposure assessment and epidemiological studies are needed for PM1, a health-relevant but understudied
+    pollutant, to better understand and mitigate its health risks. This study conducted a 3.5-year PM1 monitoring
+    campaign in a mountainous community, where air pollutants are more easily trapped, using research-grade low-cost
+    sensors, namely, AS-LUNG-O sets. Nine solar-powered AS-LUNG-O sets were installed at street level, with an
+    additional unit positioned 10 m above the ground to serve as an ambient reference. Street-level sensors were placed
+    3–5 m from potential sources such as traffic, temples, and vendors. During the 3.5-year period, the overall mean PM1
+    concentration across the nine street-level locations was 20.9 ± 11.0 μg/m3, compared to 17.0 ± 8.4 μg/m3 at the
+    elevated site. PM1 levels were typically higher in winter and on religious days across all locations. Spatial
+    analysis revealed that PM1 hot spots varied by season, day of the week (weekday vs. weekend), and event type
+    (religious vs. typical days). These hot spots were commonly located near traffic sources, temples, and markets.
+    Notably, most of the maximum PM1 values across the ten locations occurred on weekdays and typical days, highlighting
+    the unpredictable nature of PM1 levels influenced by community events. Source contributions to PM1 were estimated
+    using a generalized additive mixed model; the PM1 contribution from religious events, traffic, and vendors reached
+    statistical significance. The identified hot spots and source contributions can inform targeted control strategies
+    addressing local pollution sources. This study offers a more representative assessment of PM1 exposure for local
+    residents than data from ambient monitoring stations or short-term monitoring campaigns. The methodology presented
+    can also be applied in other countries to support community-based PM1 studies.
+
+- title: "Analyzing Excess Commuting Patterns in Taiwan Metropolitan Areas Using ETC Traffic Big Data"
+  url: https://doi.org/10.6161/jgs.202508_(111).0004
+  image: /img/commutingFlow.png
+  authors: "Chieh, Tzu-Chi & Wu, Bing Sheng"
+  year: 2025
+  venue: "Journal of Geographical Science, (111), 99–121"
+  keywords: "Urban commuting, Jobs-housing balance, Excess commuting, ETC data, Visualization"
+  abstract: >-
+    Urban commuting is one of the most important issues in the development of modern cities. As cities expand, changes
+    in land use patterns lead to increased commuting costs, requiring residents to spend more time and costs traveling
+    between their residences and workplaces. Jobs-housing balance theory indicates that the ideal situation would be
+    employment and residential locations should be in the same area to save commuting time, reduce energy consumption,
+    and air pollution emissions. Previous researches used a variety of annual government transportation or Census data
+    to assess commuting costs and estimate the potential minimum and maximum commuting costs via Excess Commuting in
+    metropolitan areas. However, due to limited data spatiotemporal resolution, there has been a lack of real-time
+    traffic data and spatial visualization. In the development of Taiwan's urban areas, highway construction has played
+    a significant role in connecting cities and suburbs, increasing accessibility between urban and rural areas. Also,
+    promoting rapid population growth and industrial and commercial development in cities along highway interchanges.
+    Since 2015, The Freeway Bureau, Ministry of Transportation and Communications (MOTC) has released the Electronic
+    Toll Collection (ETC) dataset, providing improved spatiotemporal resolution. This study utilizes ETC traffic big
+    data to visualize traffic flow spatially. Based on the concentrated distribution of traffic flows, the study
+    classifies five major commuting areas in Taiwan, namely Pei-Pei-Tao commuting area, Hsinchu commuting area, Central
+    commuting area, Tainan commuting area, and Kaohsiung commuting area. Furthermore, it investigates the jobs-housing
+    balance patterns as well as commuting trends within each commuting zone. The results of the data-driven analysis
+    reveal that the majority of commuting zones exhibit a significant jobs-housing imbalance (with an excess commuting
+    index, EC, exceeding 60%), accompanied by a year-on-year increase in commuting costs. Moreover, except for the
+    Tainan commuting area, urban development in other commuting areas is gradually approaching saturation (with
+    commuting potential used, Cu, all exceeding 70%). Hence, this study, through spatial visualization of traffic big
+    data combined with the estimation of excess commuting indices, spatializes the potential of metropolitan commuting
+    and observes the jobs-housing balance within commuting areas. Future integration with land use data could further
+    clarify the changes in urban spatial structures within each commuting area, providing insights for future urban
+    development and transportation planning.
+
+- title: "Long-term monitoring of particulate matter in an Asian community using research-grade low-cost sensors"
+  url: https://doi.org/10.1007/s10661-025-14098-z
+  image: /img/Nantou_pm25.png
+  authors: "Chieh, Tzu-Chi, Shih-Chun Candice Lung, Li-Te Chang, Chun-Hu Liu, Ming-Chien Mark Tsou, Tzu-Yao Julia Wen"
+  year: 2025
+  venue: "Environmental Monitoring and Assessment, 197(6), 653"
+  keywords: "PM microsensor, PM source evaluation, Neighborhood air quality, Asian culture sources, GIS mapping of PM"
+  abstract: >-
+    Particulate matter with an aerodynamic diameter of 2.5 µm or less (PM2.5) poses significant health risks,
+    necessitating comprehensive exposure assessment. Long-term community monitoring can provide representative exposure
+    levels for environmental epidemiological studies. This study deployed nine research-grade low-cost sensors
+    (AS-LUNG-O) for 3.5 years of street-level PM2.5 monitoring in an Asian community, evaluating temporospatial
+    variations, hotspots, and emission sources. The hourly mean PM2.5 concentrations from December 2017 to July 2021
+    were 24.3 ± 14.1 µg/m3. PM2.5 levels were typically higher in winter, on weekends, and during religious events
+    compared to summer, weekdays, and typical days, with some peak concentrations occurring randomly. Daytime PM2.5
+    levels generally exceeded nighttime background levels by 30–50%, with certain religious activities causing up to
+    80% increases. Spatial analysis identified temples and markets as pollution hotspots. Using a generalized additive
+    mixed model, we found that the COVID-19 pandemic shutdown and higher wind speeds negatively impacted PM
+    concentrations. Religious events, traffic, and vendors were significant PM sources, continually influencing
+    community air quality throughout the 3.5-year monitoring period. This study demonstrates the value of long-term PM
+    monitoring in capturing unexpected peaks, identifying critical sources, and revealing intricate temporospatial
+    distributions. Research-grade low-cost sensor networks complement traditional monitoring stations by facilitating
+    source identification in targeted communities and providing representative PM exposure data for long-term
+    environmental epidemiological research.
+
+- title: "Visualization of commuting areas and examination of jobs-housing balance with the adoption of excess commuting"
+  url: https://doi.org/10.1016/j.cities.2024.105541
+  image: /img/cities.png
+  authors: "Wu, Bing Sheng & Chieh, Tzu-Chi"
+  year: 2025
+  venue: "Cities, 156, 105541"
+  keywords: "Jobs-housing balance, Excess commuting, ETC data, GIS, Spatial big data"
+  abstract: >-
+    Rapid urban growth extends the boundaries of urbanized areas and makes people spend extra travel cost on the
+    journey to work. Scholars have examined commuting behaviors between residence and work places within a region, and
+    suggested the conceptual theory of jobs-housing balance to evaluate if there are sufficient job opportunities for
+    residents in the region. A quantitative measurement of excess commuting is proposed to reflect the degree of
+    jobs-house balance. However, current studies focus on the evaluation of excess commuting and the causality of
+    spatial restructuring between residence and workplace, the spatial extend of excess commuting in an urban region is
+    not visually delineated. In addition, conventional studies acquire static data such as statistic data or other
+    survey data to analyze impacts of commuting patterns on urban formation. Today the emergence of spatial big data
+    sheds light on the causality of urban commuting from higher spatial and temporal resolutions. This study aims to
+    examine the degree of jobs-housing balance through the calculation of excess commuting and represent the spatial
+    extent of excess commuting of Taichung metropolitan area in Taiwan. Electronic Toll Collection (ETC) data, the
+    spatial big data which is publicly accessible in Taiwan, is introduced as the commuting data and to calculate three
+    key parameters of excess commuting, Tmin, Tobs, and Tmax. The three parameters are used to visualize the extent of
+    commuting zones and examine commuting patterns of Taichung metropolitan area and observe the spatial relationship
+    between those patterns and land-use types. The evaluation of excess commuting indicates that the degree of
+    jobs-housing imbalance in Taichung metropolitan area is similar to Los Angeles metropolis in US. The analytical
+    results explain how ETC data can be successfully used for the calculation of excess commuting, and visualization of
+    the extent of commuting regions. In addition, after the cluster analysis of residential areas, it is intuitive to
+    observe spatial correlation between hot zones of residential areas and the spatial extent of theoretical maximum
+    commuting, and shows that the scenarios of commuting can be considered as an indicator to explain the possibility
+    of urban expansion in the future.

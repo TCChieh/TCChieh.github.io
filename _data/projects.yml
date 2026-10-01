@@ -1,0 +1,38 @@
+# Newest first. Leave links empty to show "Coming soon".
+- title: "Landslide-Dam Digital Twin"
+  year: "In progress"
+  image: /img/IMG_9966.JPG
+  alt: "Landslide-Dam Digital Twin project image"
+  description: "3D web simulation of disaster response and evacuation during a landslide-dam flood in eastern Taiwan."
+  links: []
+
+- title: "Taiwan Geomorphological Map Platform"
+  year: "2022"
+  image: /img/atlas_platform.png
+  alt: "Screenshot of the Taiwan geomorphological map platform"
+  description: "Interactive maps and tools for exploring Taiwan’s landforms and terrain data, plus a project introduction site and an illustrated guide to the platform’s map symbols."
+  links:
+    - label: "Platform"
+      url: https://atlas.geo.ntnu.edu.tw/platform/?mapname=Antun
+    - label: "Project site"
+      url: https://atlas.geo.ntnu.edu.tw/
+    - label: "Symbol guide"
+      url: https://sites.google.com/view/atlas-manual/
+
+- title: "ETC Highway Dashboard"
+  year: "2021"
+  image: /img/etcmap.png
+  alt: "Screenshot of the ETC highway traffic dashboard"
+  description: "Historical hourly traffic flow on Taiwan’s highways from 2017 to 2021, built on Electronic Toll Collection (ETC) data."
+  links:
+    - label: "Visit site"
+      url: http://webgis.geo.ntnu.edu.tw/ETC/
+
+- title: "IGCT-GSCT Joint Conference 2020"
+  year: "2020"
+  image: /img/IGCTweb.png
+  alt: "Screenshot of the IGCT-GSCT 2020 conference website"
+  description: "Website for the 24th International Geographical Conference of Taiwan — the first site I built."
+  links:
+    - label: "Visit site"
+      url: https://www1.geo.ntnu.edu.tw/IGCT/
