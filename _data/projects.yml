@@ -4,7 +4,9 @@
   image: /img/IMG_9966.JPG
   alt: "Landslide-Dam Digital Twin project image"
   description: "3D web simulation of disaster response and evacuation during a landslide-dam flood in eastern Taiwan."
-  links: []
+  links:
+    - label: "Visit site"
+      url: https://tcchieh.github.io/mataian-digital-twin/
 
 - title: "Taiwan Geomorphological Map Platform"
   year: "2022"

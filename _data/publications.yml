@@ -1,8 +1,8 @@
-# Newest first. Your name is highlighted automatically wherever "Chieh, Tzu-Chi" appears in authors.
+# Newest first. Your name is highlighted automatically wherever ", Tzu-Chi" appears in authors.
 - title: "PM1 Source Evaluation with 3.5 Years of Monitoring in Central Taiwan Using Research-grade Low-cost Sensors"
   url: https://doi.org/10.1007/s44408-025-00058-2
   image: /img/PM1_graphAbstract-5.jpg
-  authors: "Shih-Chun Candice Lung, Chieh, Tzu-Chi, Li-Te Chang, Chun-Hu Liu, Ming-Chien Mark Tsou, Tzu-Yao Julia Wen"
+  authors: "Shih-Chun Candice Lung, Tzu-Chi Chieh, Li-Te Chang, Chun-Hu Liu, Ming-Chien Mark Tsou, Tzu-Yao Julia Wen"
   year: 2025
   venue: "Aerosol and Air Quality Research, 25(11), 1–16"
   keywords: "PM1 exposure, Community PM assessment, PM1 sensing device, Exposure increments"
@@ -28,7 +28,7 @@
 - title: "Analyzing Excess Commuting Patterns in Taiwan Metropolitan Areas Using ETC Traffic Big Data"
   url: https://doi.org/10.6161/jgs.202508_(111).0004
   image: /img/commutingFlow.png
-  authors: "Chieh, Tzu-Chi & Wu, Bing Sheng"
+  authors: "Tzu-Chi Chieh & Bing Sheng Wu"
   year: 2025
   venue: "Journal of Geographical Science, (111), 99–121"
   keywords: "Urban commuting, Jobs-housing balance, Excess commuting, ETC data, Visualization"
@@ -61,7 +61,7 @@
 - title: "Long-term monitoring of particulate matter in an Asian community using research-grade low-cost sensors"
   url: https://doi.org/10.1007/s10661-025-14098-z
   image: /img/Nantou_pm25.png
-  authors: "Chieh, Tzu-Chi, Shih-Chun Candice Lung, Li-Te Chang, Chun-Hu Liu, Ming-Chien Mark Tsou, Tzu-Yao Julia Wen"
+  authors: "Tzu-Chi Chieh, Shih-Chun Candice Lung, Li-Te Chang, Chun-Hu Liu, Ming-Chien Mark Tsou, Tzu-Yao Julia Wen"
   year: 2025
   venue: "Environmental Monitoring and Assessment, 197(6), 653"
   keywords: "PM microsensor, PM source evaluation, Neighborhood air quality, Asian culture sources, GIS mapping of PM"
@@ -86,7 +86,7 @@
 - title: "Visualization of commuting areas and examination of jobs-housing balance with the adoption of excess commuting"
   url: https://doi.org/10.1016/j.cities.2024.105541
   image: /img/cities.png
-  authors: "Wu, Bing Sheng & Chieh, Tzu-Chi"
+  authors: "Bing Sheng Wu & Tzu-Chi Chieh"
   year: 2025
   venue: "Cities, 156, 105541"
   keywords: "Jobs-housing balance, Excess commuting, ETC data, GIS, Spatial big data"

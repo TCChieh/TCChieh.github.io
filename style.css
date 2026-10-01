@@ -327,10 +327,10 @@ footer {
 .toggle:hover {
   text-decoration: underline;
 }
-#research h5 a{
+#publications a{
     color: black;
 }
-#research h5 a:hover{
+#publications a:hover{
     color: rgb(99, 100, 103);
 }
 .publication-img {
@@ -378,6 +378,11 @@ footer {
   color: white;
   overflow: hidden;
 }
+}
+
+.badge{
+  color: white;
+  background-color: rgba(61, 121, 93, 0.84);
 }
 
 /* ----------------------------- contact ----------------------- */

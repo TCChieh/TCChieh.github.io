@@ -20,7 +20,7 @@
 .pub-abstract p { text-align: justify; }
 
 /* Conferences */
-.conf-year { border-bottom: 2px solid var(--bs-primary); display: inline-block; padding-bottom: 2px; }
+.conf-year { border-bottom: 2px solid var(--bs-primary); display: inline-block; padding-bottom: 2px; color: rgba(61, 121, 93, 0.946);}
 .conf-item { margin-bottom: 1rem; }
 .conf-status { font-size: 0.75rem; vertical-align: middle; }
 
