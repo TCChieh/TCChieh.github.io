@@ -380,11 +380,6 @@ footer {
 }
 }
 
-.badge{
-  color: white;
-  background-color: rgba(61, 121, 93, 0.84);
-}
-
 /* ----------------------------- contact ----------------------- */
 #contact {
   background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
@@ -419,7 +414,7 @@ footer {
 .contact-card img {
   font-size: 2rem;
   color: #5b81bb;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   transition: transform 0.3s ease;
 }
 

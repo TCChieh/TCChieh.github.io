@@ -2,7 +2,7 @@
 
 Live site: https://tcchieh.github.io/
 
-Built with [Jekyll](https://jekyllrb.com/) on GitHub Pages and Bootstrap 5.
+<!-- Built with [Jekyll](https://jekyllrb.com/) on GitHub Pages and Bootstrap 5.
 
 ## Where to edit
 
@@ -25,4 +25,4 @@ gem install bundler jekyll jekyll-seo-tag
 jekyll serve
 ```
 
-Then open http://localhost:4000.
+Then open http://localhost:4000. -->

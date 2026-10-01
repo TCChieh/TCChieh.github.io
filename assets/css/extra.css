@@ -4,7 +4,7 @@
 .contact-card .ai { font-size: 1.25em; line-height: 1; }
 
 /* Research interest tags */
-.research-tags .badge { font-weight: 500; font-size: 0.9rem; }
+.research-tags .badge { font-weight: 500; font-size: 0.9rem; color: white; background-color: rgba(61, 121, 93, 0.84);}
 
 /* Publications */
 .pub-item + .pub-item { border-top: 1px solid var(--bs-border-color); }
@@ -20,7 +20,7 @@
 .pub-abstract p { text-align: justify; }
 
 /* Conferences */
-.conf-year { border-bottom: 2px solid var(--bs-primary); display: inline-block; padding-bottom: 2px; color: rgba(61, 121, 93, 0.946);}
+.conf-year { border-bottom: 2px solid var(--bs-primary); display: inline-block; padding-bottom: 2px; }
 .conf-item { margin-bottom: 1rem; }
 .conf-status { font-size: 0.75rem; vertical-align: middle; }
 
@@ -53,4 +53,16 @@ summary:focus-visible {
 }
 @media (prefers-reduced-motion: reduce) {
   .visitor-map { transition: none; }
+}
+
+
+#publications a{
+    color: black;
+}
+#publications a{
+    color: black;
+}
+
+#conferences strong{
+  color: rgba(58, 138, 79, 0.97);
 }
