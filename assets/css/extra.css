@@ -10,7 +10,7 @@
 .contact-card .ai { font-size: 1.25em; line-height: 1; }
 
 /* Research interest tags */
-.research-tags .badge { font-weight: 500; font-size: 0.9rem; }
+.research-tags .badge { font-weight: 500; font-size: 0.9rem; background-color:rgba(86, 145, 101, 0.97);}
 
 /* Publications */
 .pub-item + .pub-item { border-top: 1px solid var(--bs-border-color); }
